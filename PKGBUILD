@@ -4,14 +4,14 @@
 
 _pkgname='github-desktop'
 pkgname="${_pkgname}-git"
-pkgver=1.3.0_beta6
+pkgver=1.3.4
 gitname="release-${pkgver//_/-}"
 pkgrel=1
 pkgdesc="GUI for managing Git and GitHub."
 arch=('x86_64')
 url="https://desktop.github.com"
 license=('MIT')
-depends=('gnome-keyring' 'git' 'electron' 'nodejs' 'libcurl-compat' 'libcurl-gnutls')
+depends=('gnome-keyring' 'git' 'electron' 'nodejs-lts-carbon' 'libcurl-compat' 'libcurl-gnutls')
 optdepends=('hub: CLI interface for GitHub.')
 makedepends=('libcurl-openssl-1.0' 'xorg-server-xvfb' 'yarn' 'python2' 'nvm')
 DLAGENTS=("http::/usr/bin/git clone --branch ${gitname} --single-branch %u")
